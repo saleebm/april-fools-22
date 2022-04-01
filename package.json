@@ -1,0 +1,26 @@
+{
+  "name": "april_fools",
+  "version": "1.0.0",
+  "description": "send cat jokes every 15 minutes for a day (April Fools)",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Mina Saleeb",
+  "main": "index.js",
+  "scripts": {
+    "prisma": "npm run prisma:migrate && npm run prisma:generate",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "seed": "node seed.js",
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.11.1",
+    "prettier": "^2.6.1",
+    "twilio": "^3.76.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "prisma": "^3.11.1"
+  }
+}

@@ -1,0 +1,14 @@
+-- CreateTable
+CREATE TABLE "CatFactMessage" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "message" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "status" TEXT NOT NULL,
+    "raw" TEXT NOT NULL
+);
+
+-- CreateTable
+CREATE TABLE "CatFact" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "content" TEXT NOT NULL
+);
