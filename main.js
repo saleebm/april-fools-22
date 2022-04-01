@@ -12,8 +12,18 @@ const prisma = new PrismaClient()
 const RECIPIENT_NUMBER = process.env['RECIPIENT_NUMBER']
 const SENDER_NUMBER = process.env['SENDER_NUMBER']
 
+let options = {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit'
+}
+
 ;(async function () {
-  console.log('Starting...', new Date().toLocaleDateString())
+  const now = new Date()
+  console.log('Starting...', now.toLocaleDateString('en-US', options))
   try {
     let catFactStats = await prisma.catFactMessageStats.findFirst({
       where: {
