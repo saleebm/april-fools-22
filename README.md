@@ -2,14 +2,16 @@
 
 ## Set up
 
-npm i
-npm run prisma
-npm run seed
+`npm install`
+
+`npm run prisma`
+
+`npm run seed`
 
 Install pm2 globally
 
 Then...
 
-pm2 start ecosystem.config.js
+`pm2 start ecosystem.config.js`
 
 Voila
