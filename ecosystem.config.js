@@ -9,7 +9,7 @@ module.exports = {
       script: 'main.js',
       instances: 1,
       exec_mode: 'fork',
-      cron_restart: '0,15 * * * *',
+      cron_restart: '0 0 * * *',
       watch: false,
       autorestart: false
     }
